@@ -1,31 +1,58 @@
 import React from 'react'
-import { Button, Dropdown, Space } from 'antd';
+import { Dropdown } from 'antd';
 
 
 const items = [
     {
         key: '1',
-        label: (
-            <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
-                1st menu item
-            </a>
-        ),
+        label: "Overview"
     },
     {
         key: '2',
-        label: (
-            <a target="_blank" rel="noopener noreferrer" href="https://www.aliyun.com">
-                2nd menu item
-            </a>
-        ),
+        label: "Structure of BSCS Programme"
     },
     {
         key: '3',
-        label: (
-            <a target="_blank" rel="noopener noreferrer" href="https://www.luohanacademy.com">
-                3rd menu item
-            </a>
-        ),
+        label: "BSCS Road Map"
+    },
+    {
+        key: '4',
+        label: "BSCS (Biology Group) Road Map"
+    },
+    {
+        key: '5',
+        label: "BSCS Fee Structure"
+    },
+];
+
+
+const items2 = [
+    {
+        key: '1',
+        label: "Overview"
+    },
+    {
+        key: '2',
+        label: "Structure of MSCS Programme"
+    },
+    {
+        key: '3',
+        label: "MSCS Road Map"
+    },
+    {
+        key: '4',
+        label: "MSCS Fee Structure"
+    },
+];
+
+const items3 = [
+    {
+        key: '1',
+        label: "Overview"
+    },
+    {
+        key: '4',
+        label: "MSCS Fee Structure"
     },
 ];
 
@@ -39,23 +66,47 @@ export default function HeroSection() {
             <div className='flex gap-3'>
                 <div>
                     <div>
-                        <button className='bg-green-900 text-white w-44 text-start px-3 mb-2 h-10'>Home</button>
+                        <button className='bg-green-900 text-white w-52 text-start px-3 mb-2 h-10 hover:bg-yellow-500 font-semibold'>Home</button>
                     </div>
-                    <Space direction="vertical">
-                        <Space wrap>
-                            <Dropdown
-                                menu={{
-                                    items,
-                                }}
-                                placement="bottomLeft"
-                                arrow={{
-                                    pointAtCenter: true,
-                                }}
-                            >
-                                <button className='p-2 min-w-min  bg-green-900 text-white'>BS Computer Science (Hons) 4 Years</button>
-                            </Dropdown>
-                        </Space>
-                    </Space>
+                    <div>
+                        <Dropdown
+                            menu={{
+                                items,
+                            }}
+                            placement="bottomLeft"
+                            arrow={{
+                                pointAtCenter: true,
+                            }}
+                        >
+                            <button className='p-2 w-52 bg-green-900 text-white text-start mb-2 px-3 hover:bg-yellow-500 font-semibold'>BS Computer Science (Hons) 4 Years</button>
+                        </Dropdown>
+                    </div>
+                    <div>
+                        <Dropdown
+                            menu={{
+                                items: items2,
+                            }}
+                            placement="bottomLeft"
+                            arrow={{
+                                pointAtCenter: true,
+                            }}
+                        >
+                            <button className='p-2 w-52 bg-green-900 text-white text-start mb-2 px-3 hover:bg-yellow-500 font-semibold'>MS Computer Science Weekend 2 Years</button>
+                        </Dropdown>
+                    </div>
+                    <div>
+                        <Dropdown
+                            menu={{
+                                items: items3
+                            }}
+                            placement="bottomLeft"
+                            arrow={{
+                                pointAtCenter: true,
+                            }}
+                        >
+                            <button className='p-2 w-52 bg-green-900 text-white text-start mb-2 px-3 hover:bg-yellow-500 font-semibold'>MS Artificial Intelligence</button>
+                        </Dropdown>
+                    </div>
                 </div>
                 <div>
                     <h3>University's Vision</h3>
