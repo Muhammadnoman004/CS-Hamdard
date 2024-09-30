@@ -1,19 +1,61 @@
 import React from 'react'
+import { Button, Dropdown, Space } from 'antd';
+
+
+const items = [
+    {
+        key: '1',
+        label: (
+            <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
+                1st menu item
+            </a>
+        ),
+    },
+    {
+        key: '2',
+        label: (
+            <a target="_blank" rel="noopener noreferrer" href="https://www.aliyun.com">
+                2nd menu item
+            </a>
+        ),
+    },
+    {
+        key: '3',
+        label: (
+            <a target="_blank" rel="noopener noreferrer" href="https://www.luohanacademy.com">
+                3rd menu item
+            </a>
+        ),
+    },
+];
 
 export default function HeroSection() {
     return (
-        <section>
-            <div className='text-center mt-5'>
+        <section className='p-3'>
+            <div className='text-center mt-2'>
                 <h1 className='text-6xl uppercase text-green-900 font-bold'>Department of computer science</h1>
             </div>
 
-            <div className='flex gap-5'>
+            <div className='flex gap-3'>
                 <div>
-                    <button>Noman</button><br />
-                    <button>Noman</button><br />
-                    <button>Noman</button><br />
-                    <button>Noman</button><br />
-                    <button>Noman</button><br />
+                    <div>
+                        <button className='bg-green-900 text-white w-44 text-start px-3 mb-2 h-10'>Home</button>
+                    </div>
+                    <Space direction="vertical">
+                        <Space wrap>
+                            <Dropdown
+                                menu={{
+                                    items,
+                                }}
+                                placement="bottomLeft"
+                                arrow={{
+                                    pointAtCenter: true,
+                                }}
+                            >
+                                <button className='p-2 min-w-min  bg-green-900 text-white'>BS Computer Science (Hons) 4 Years</button>
+                            </Dropdown>
+                        </Space>
+                    </Space>
                 </div>
                 <div>
                     <h3>University's Vision</h3>
