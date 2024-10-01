@@ -1,5 +1,6 @@
 import React from 'react'
 import { Dropdown } from 'antd';
+import { FaAngleRight } from "react-icons/fa";
 
 
 const items = [
@@ -56,6 +57,59 @@ const items3 = [
     },
 ];
 
+const items4 = [
+    {
+        key: '1',
+        label: "Overview"
+    },
+    {
+        key: '2',
+        label: "Structure of Ph.D Programme"
+    },
+    {
+        key: '3',
+        label: "Ph.D CS Road Map"
+    },
+    {
+        key: '4',
+        label: "Ph.D Admission Criteria"
+    },
+    {
+        key: '5',
+        label: "Ph.D Fee Structure"
+    },
+];
+const items5 = [
+    {
+        key: '1',
+        label: "Overview"
+    },
+    {
+        key: '2',
+        label: "Faculty"
+    },
+    {
+        key: '3',
+        label: "News & Events"
+    },
+    {
+        key: '4',
+        label: "Publications"
+    },
+    {
+        key: '5',
+        label: "PLO's"
+    },
+    {
+        key: '6',
+        label: "PEO's"
+    },
+    {
+        key: '7',
+        label: "Societies"
+    },
+];
+
 export default function HeroSection() {
     return (
         <section className='p-3'>
@@ -66,7 +120,7 @@ export default function HeroSection() {
             <div className='flex gap-3'>
                 <div>
                     <div>
-                        <button className='bg-green-900 text-white w-52 text-start px-3 mb-2 h-10 hover:bg-yellow-500 font-semibold'>Home</button>
+                        <button className='bg-green-900 text-white w-56 text-start px-3 mb-2 h-10 hover:bg-yellow-500 font-semibold'>Home</button>
                     </div>
                     <div>
                         <Dropdown
@@ -78,7 +132,9 @@ export default function HeroSection() {
                                 pointAtCenter: true,
                             }}
                         >
-                            <button className='p-2 w-52 bg-green-900 text-white text-start mb-2 px-3 hover:bg-yellow-500 font-semibold'>BS Computer Science (Hons) 4 Years</button>
+                            <button className='p-2 w-56 bg-green-900 text-white text-start mb-2 px-3 hover:bg-yellow-500 font-semibold'>BS Computer Science (Hons) 4 Years <FaAngleRight /></button>
+
+
                         </Dropdown>
                     </div>
                     <div>
@@ -91,7 +147,7 @@ export default function HeroSection() {
                                 pointAtCenter: true,
                             }}
                         >
-                            <button className='p-2 w-52 bg-green-900 text-white text-start mb-2 px-3 hover:bg-yellow-500 font-semibold'>MS Computer Science Weekend 2 Years</button>
+                            <button className='p-2 w-56 bg-green-900 text-white text-start mb-2 px-3 hover:bg-yellow-500 font-semibold'>MS Computer Science Weekend 2 Years <FaAngleRight /></button>
                         </Dropdown>
                     </div>
                     <div>
@@ -104,7 +160,33 @@ export default function HeroSection() {
                                 pointAtCenter: true,
                             }}
                         >
-                            <button className='p-2 w-52 bg-green-900 text-white text-start mb-2 px-3 hover:bg-yellow-500 font-semibold'>MS Artificial Intelligence</button>
+                            <button className='p-2 w-56 bg-green-900 text-white text-start mb-2 px-3 hover:bg-yellow-500 font-semibold'>MS Artificial Intelligence <FaAngleRight /></button>
+                        </Dropdown>
+                    </div>
+                    <div>
+                        <Dropdown
+                            menu={{
+                                items: items4
+                            }}
+                            placement="bottomLeft"
+                            arrow={{
+                                pointAtCenter: true,
+                            }}
+                        >
+                            <button className='p-2 w-56 bg-green-900 text-white text-start mb-2 px-3 hover:bg-yellow-500 font-semibold'>Ph.D Computer Science (Weekend) 3.5 Years <FaAngleRight /></button>
+                        </Dropdown>
+                    </div>
+                    <div>
+                        <Dropdown
+                            menu={{
+                                items: items5
+                            }}
+                            placement="bottomLeft"
+                            arrow={{
+                                pointAtCenter: true,
+                            }}
+                        >
+                            <button className='p-2 w-56 bg-green-900 text-white text-start mb-2 px-3 hover:bg-yellow-500 font-semibold'>About Department Of Computer Science <FaAngleRight /></button>
                         </Dropdown>
                     </div>
                 </div>
