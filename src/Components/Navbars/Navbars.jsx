@@ -2,12 +2,14 @@ import React from 'react'
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import hamdardLogo from '../../assets/hamdardLogo.png';
 
 export default function Navbars() {
     return (
         <section>
-            <Navbar collapseOnSelect expand="lg" sticky="top" className="bg-white shadow-xl p-4 uppercase font-semibold">
-                <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+            <Navbar collapseOnSelect expand="lg" sticky="top" className="bg-white shadow-xl px-4 uppercase font-semibold">
+                <Navbar.Brand href="#home"><img src={hamdardLogo} alt="" className='w-14 h-14' /></Navbar.Brand>
+                <h2 className='text-green-900 font-bold text-lg'>Hamdard University</h2>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className='ms-auto'>
@@ -37,6 +39,6 @@ export default function Navbars() {
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
-        </section>
+        </section >
     )
 }
