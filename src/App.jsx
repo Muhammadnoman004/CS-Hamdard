@@ -1,16 +1,10 @@
-import Footer from './Components/Footer/Footer'
-import Header from './Components/Header/Header'
-import HeroSection from './Components/HeroSection/HeroSection'
-import Navbars from './Components/Navbars/Navbars'
+import ComputerScience from './Pages/ComputerScience'
 
 function App() {
 
   return (
     <>
-      <Header />
-      <Navbars />
-      <HeroSection />
-      <Footer />
+      <ComputerScience />
     </>
   )
 }
