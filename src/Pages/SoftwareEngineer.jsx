@@ -150,16 +150,16 @@ export default function SoftwareEngineer() {
                         </div>
                     </div>
                     <div className='mt-4'>
-                        <h3 className='font-bold text-3xl'>University's Vision</h3>
-                        <p className='pt-3 pb-2 text-lg'>To be a renowned University in Teaching, Research, Innovation, and Commercialization, providing a conducive environment for the acquisition of latest knowledge so that students may contribute to community support, technical and socioeconomic development.</p>
-                        <h3 className='font-bold text-3xl'>University's Mission</h3>
-                        <p className='pt-3 pb-2 text-lg'>To play a leading role in technical and socioeconomic development through academic and research excellence while adhering to international quality standards. The University would develop leaders who are multi-disciplinary, value-oriented, creative, and entrepreneurial.</p>
-                        <h3 className='font-bold text-3xl'>Department Vision</h3>
-                        <p className='pt-3 pb-2 text-lg'>To be one of the premier Computer Science departments in the region benefitting humanity with its excellence in research, innovation, and entrepreneurship.</p>
-                        <h3 className='font-bold text-3xl'>Department Mission</h3>
-                        <p className='pt-3 pb-2 text-lg'>To create and impart the latest Computer Science and interdisciplinary knowledge in a way that inspires its students to be ethical lifelong learners, researchers and innovative problem solvers who strive to improve others' lives both locally and globally.</p>
-                        <h3 className='font-bold text-3xl'>Core Values</h3>
-                        <p className='pt-3 pb-2 text-lg'>The core values guiding the department are:</p>
+                        <h3 className='font-bold text-3xl underline text-green-800'>Overview</h3>
+                        <p className='pt-3 pb-2 text-lg'>Software Engineering at LGU is the second-largest department of the university. It is the discipline of creating high-quality software systems in a systematic, controlled, and efficient manner. It involves the application of engineering concepts, techniques, and methods to the design, development, deployment, and maintenance of software systems. In our software engineering program, we groom professionals who have a mastery of principles, theory, practices, and processes necessary to produce quality software systems. The department has highly qualified faculty members with solid academic backgrounds and rich industry experience who are not only best in teaching but actively promote research culture among the youth of the country.</p>
+                        <h3 className='font-bold text-3xl underline text-green-800'>Vision:</h3>
+                        <p className='pt-3 pb-2 text-lg'>To be a distinguished learning center of software engineering in the region, driving innovation and excellence through collaborative solutions that empower individuals to thrive in an ever-changing digital ecosystem.</p>
+                        <h3 className='font-bold text-3xl underline text-green-800'>Mission:</h3>
+                        <p className='pt-3 pb-2 text-lg'>To provide dynamic learning environment, instill creative thinking, and cultivate entrepreneurial skills so that graduates would be well-rounded professionals to serve the global community.</p>
+                        <h3 className='font-bold text-3xl underline text-green-800'>Our History:</h3>
+                        <p className='pt-3 pb-2 text-lg'>Our department is committed to offering high-tech courses with research-based teaching. We believe that our prudent and responsible course of action during the study in these programs enables the students to improve their skills and to place them for competitive positions in the market. The Department focuses on imparting the knowledge and training which should enable students to harmonize theory with practice, the concept with the application, and the problem with the solution.</p>
+                        <h3 className='font-bold text-3xl underline text-green-800'>Our Societies:</h3>
+                        <p className='pt-3 pb-2 text-lg hover:text-green-800 cursor-pointer'>Event Society of Software Engineering (ESSE)</p>
                     </div>
                 </div>
 
