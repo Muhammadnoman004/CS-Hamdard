@@ -3,6 +3,7 @@ import Header from '../Components/Header/Header'
 import Navbars from '../Components/Navbars/Navbars'
 import { Dropdown } from 'antd';
 import { FaAngleRight } from "react-icons/fa";
+import Footer from '../Components/Footer/Footer';
 
 
 const items = [
@@ -164,6 +165,8 @@ export default function SoftwareEngineer() {
                 </div>
 
             </section>
+
+            <Footer />
         </>
     )
 }
