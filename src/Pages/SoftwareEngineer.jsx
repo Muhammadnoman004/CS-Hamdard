@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../Components/Header/Header'
 import Navbars from '../Components/Navbars/Navbars'
 import { Dropdown } from 'antd';
@@ -90,6 +90,11 @@ const items3 = [
 
 
 export default function SoftwareEngineer() {
+
+    useEffect(() => {
+        document.title = 'Department of Software Engineering'
+    }, [document])
+
     return (
         <>
             <Header />
