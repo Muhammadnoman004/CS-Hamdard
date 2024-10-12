@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import hamdardLogo from '../../assets/hamdardLogo.png';
+import { Link } from 'react-router-dom';
 
 export default function Navbars() {
     return (
@@ -23,9 +24,9 @@ export default function Navbars() {
                                 className='capitalize'
 
                             >
-                                <NavDropdown.Item href="#action/3.2.1">Department of Computer Science</NavDropdown.Item>
+                                <Link to={'/'}><NavDropdown.Item href="#action/3.2.1">Department of Computer Science</NavDropdown.Item></Link>
                                 <NavDropdown.Item href="#action/3.2.2">Department of Information Technology</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2.2">Department of Software Engineering</NavDropdown.Item>
+                                <Link to={'/department-of-software-engineering'}><NavDropdown.Item href="#action/3.2.2">Department of Software Engineering</NavDropdown.Item></Link>
                                 <NavDropdown.Divider />
                             </NavDropdown>
                             <NavDropdown.Item className='capitalize' href="#action/3.3">Faculty of Languages</NavDropdown.Item>
