@@ -5,8 +5,8 @@ function App() {
 
   return (
     <>
-      {/* <ComputerScience /> */}
-      <SoftwareEngineer />
+      <ComputerScience />
+      {/* <SoftwareEngineer /> */}
     </>
   )
 }
